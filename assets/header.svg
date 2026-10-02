@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="Segun Alabi — Senior Full Stack Engineer, Founding Engineer for AI/LLM and Cloud Platforms">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b12"/>
+      <stop offset="0.55" stop-color="#0b1418"/>
+      <stop offset="1" stop-color="#0a1f1a"/>
+    </linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.6" stop-color="#d9fff1"/>
+      <stop offset="1" stop-color="#00e5a0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.5" r="0.45">
+      <stop offset="0" stop-color="#00e5a0" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#00e5a0" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1b2a2f" stroke-width="1"/>
+    </pattern>
+    <clipPath id="card"><rect width="1200" height="340" rx="18"/></clipPath>
+    <style>
+      .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+      .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+      .rise { opacity: 0; animation: rise .8s cubic-bezier(.2,.7,.2,1) forwards; }
+      .d1 { animation-delay: .1s } .d2 { animation-delay: .35s } .d3 { animation-delay: .6s } .d4 { animation-delay: .85s }
+      @keyframes rise { from { opacity: 0; transform: translateY(14px) } to { opacity: 1; transform: translateY(0) } }
+      .cursor { animation: blink 1.1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0 } }
+      .edge { stroke: #1f4a3f; stroke-width: 1.5; fill: none; }
+      .node { fill: #0d1117; stroke: #00e5a0; stroke-width: 2; }
+      .hub  { fill: #00e5a0; }
+      .pulse { fill: #00e5a0; }
+      .ring { fill: none; stroke: #00e5a0; transform-box: fill-box; transform-origin: center; animation: ring 2.6s ease-out infinite; }
+      @keyframes ring { from { opacity: .7; transform: scale(1) } to { opacity: 0; transform: scale(3.2) } }
+      .lbl { fill: #6e8a85; font-size: 11px; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+    <rect width="1200" height="340" fill="url(#grid)" opacity="0.55"/>
+    <rect width="1200" height="340" fill="url(#glow)"/>
+    <rect x="0" y="0" width="6" height="340" fill="#00e5a0"/>
+
+    <!-- ── Left: identity ── -->
+    <g class="rise d1">
+      <text x="64" y="84" class="mono" font-size="15" fill="#00e5a0">~/segun-alabi <tspan fill="#6e8a85">$ whoami</tspan></text>
+    </g>
+    <g class="rise d2">
+      <text x="62" y="160" class="sans" font-size="74" font-weight="800" fill="url(#name)" letter-spacing="-1.5">Segun Alabi<tspan fill="#00e5a0" class="cursor">_</tspan></text>
+    </g>
+    <g class="rise d3">
+      <text x="64" y="206" class="sans" font-size="24" font-weight="600" fill="#e6edf3">Senior Full Stack Engineer <tspan fill="#00e5a0">·</tspan> Founding Engineer</text>
+      <text x="64" y="240" class="sans" font-size="17" fill="#8b949e">AI/LLM platforms · real-time data pipelines · cloud-native systems</text>
+    </g>
+    <g class="rise d4 mono" font-size="13">
+      <rect x="64" y="268" width="104" height="30" rx="15" fill="#0f2a23" stroke="#00e5a0" stroke-opacity=".5"/>
+      <text x="116" y="288" text-anchor="middle" fill="#00e5a0">10+ years</text>
+      <rect x="178" y="268" width="196" height="30" rx="15" fill="#11161d" stroke="#30363d"/>
+      <text x="276" y="288" text-anchor="middle" fill="#c9d1d9">Uber · Scribe · Cognizant</text>
+      <rect x="384" y="268" width="168" height="30" rx="15" fill="#11161d" stroke="#30363d"/>
+      <text x="468" y="288" text-anchor="middle" fill="#c9d1d9">East Orange, NJ</text>
+    </g>
+
+    <!-- ── Right: live pipeline graph ── -->
+    <g transform="translate(730,40)">
+      <path id="e1" class="edge" d="M20 60 C 110 60, 120 130, 210 130"/>
+      <path id="e2" class="edge" d="M20 200 C 110 200, 120 130, 210 130"/>
+      <path id="e3" class="edge" d="M210 130 C 290 130, 290 50, 370 50"/>
+      <path id="e4" class="edge" d="M210 130 L 370 130"/>
+      <path id="e5" class="edge" d="M210 130 C 290 130, 290 210, 370 210"/>
+
+      <circle r="4" class="pulse"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#e1"/></animateMotion></circle>
+      <circle r="4" class="pulse"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite"><mpath href="#e2"/></animateMotion></circle>
+      <circle r="4" class="pulse"><animateMotion dur="2s" begin=".4s" repeatCount="indefinite"><mpath href="#e3"/></animateMotion></circle>
+      <circle r="4" class="pulse"><animateMotion dur="1.6s" begin=".9s" repeatCount="indefinite"><mpath href="#e4"/></animateMotion></circle>
+      <circle r="4" class="pulse"><animateMotion dur="2s" begin="1.5s" repeatCount="indefinite"><mpath href="#e5"/></animateMotion></circle>
+
+      <circle cx="20" cy="60" r="9" class="node"/>
+      <circle cx="20" cy="200" r="9" class="node"/>
+      <circle cx="210" cy="130" r="9" class="ring"/>
+      <circle cx="210" cy="130" r="14" class="hub"/>
+      <circle cx="370" cy="50" r="9" class="node"/>
+      <circle cx="370" cy="130" r="9" class="node"/>
+      <circle cx="370" cy="210" r="9" class="node"/>
+
+      <g class="mono lbl">
+        <text x="20" y="36" text-anchor="middle">EVENTS</text>
+        <text x="20" y="232" text-anchor="middle">SIGNALS</text>
+        <text x="210" y="172" text-anchor="middle" fill="#00e5a0">LLM · RAG</text>
+        <text x="370" y="26" text-anchor="middle">APIs</text>
+        <text x="370" y="162" text-anchor="middle">DASHBOARDS</text>
+        <text x="370" y="242" text-anchor="middle">DECISIONS</text>
+      </g>
+    </g>
+  </g>
+</svg>

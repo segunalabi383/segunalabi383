@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" role="img" aria-label="Systems that scale. AI that ships. Impact you can measure.">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#0a1f1a"/>
+      <stop offset="1" stop-color="#070b12"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+      .w { opacity: 0; animation: in .6s ease-out forwards; }
+      .w1 { animation-delay: .1s } .w2 { animation-delay: .5s } .w3 { animation-delay: .9s }
+      @keyframes in { to { opacity: 1 } }
+    </style>
+  </defs>
+  <rect width="1200" height="120" rx="18" fill="url(#bg)"/>
+  <rect x="1194" y="0" width="6" height="120" fill="#00e5a0"/>
+  <text x="600" y="58" text-anchor="middle" class="sans w w1" font-size="26" font-weight="700" fill="#e6edf3">
+    <tspan>Systems that scale.</tspan>
+    <tspan fill="#00e5a0"> AI that ships.</tspan>
+    <tspan> Impact you can measure.</tspan>
+  </text>
+  <text x="600" y="90" text-anchor="middle" class="mono" font-size="13" fill="#6e8a85">segun alabi · senior full stack &amp; founding engineer</text>
+</svg>

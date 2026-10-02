@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200" role="img" aria-label="Impact: 30% lower latency, 40% faster fraud investigations, 25% less equipment downtime, 50K+ events per minute, 50% faster reporting, 6+ enterprise clients">
+  <defs>
+    <style>
+      .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+      .card { opacity: 0; animation: up .7s cubic-bezier(.2,.7,.2,1) forwards; }
+      @keyframes up { from { opacity: 0; transform: translateY(16px) } to { opacity: 1; transform: translateY(0) } }
+      .c1 { animation-delay: .05s } .c2 { animation-delay: .2s } .c3 { animation-delay: .35s }
+      .c4 { animation-delay: .5s } .c5 { animation-delay: .65s } .c6 { animation-delay: .8s }
+      .box { fill: #0d1117; stroke: #21302f; }
+      .num { fill: #00e5a0; font-size: 40px; font-weight: 800; letter-spacing: -1px; }
+      .what { fill: #e6edf3; font-size: 14px; font-weight: 600; }
+      .where { fill: #6e8a85; font-size: 11px; letter-spacing: .5px; }
+      .bar { fill: #00e5a0; }
+    </style>
+  </defs>
+
+  <g class="card c1">
+    <rect x="4" y="16" width="186" height="168" rx="14" class="box"/><rect x="24" y="16" width="44" height="4" rx="2" class="bar"/>
+    <text x="24" y="86" class="sans num">-30%</text>
+    <text x="24" y="118" class="sans what">API latency</text>
+    <text x="24" y="160" class="mono where">UBER · MONGO + REDIS</text>
+  </g>
+  <g class="card c2">
+    <rect x="206" y="16" width="186" height="168" rx="14" class="box"/><rect x="226" y="16" width="44" height="4" rx="2" class="bar"/>
+    <text x="226" y="86" class="sans num">-40%</text>
+    <text x="226" y="118" class="sans what">Investigation time</text>
+    <text x="226" y="160" class="mono where">UBER · RISK DASHBOARDS</text>
+  </g>
+  <g class="card c3">
+    <rect x="408" y="16" width="186" height="168" rx="14" class="box"/><rect x="428" y="16" width="44" height="4" rx="2" class="bar"/>
+    <text x="428" y="86" class="sans num">-25%</text>
+    <text x="428" y="118" class="sans what">Equipment downtime</text>
+    <text x="428" y="160" class="mono where">SCRIBE · PREDICTIVE ML</text>
+  </g>
+  <g class="card c4">
+    <rect x="610" y="16" width="186" height="168" rx="14" class="box"/><rect x="630" y="16" width="44" height="4" rx="2" class="bar"/>
+    <text x="630" y="86" class="sans num">50K+</text>
+    <text x="630" y="118" class="sans what">Events / minute</text>
+    <text x="630" y="160" class="mono where">SCRIBE · INGESTION</text>
+  </g>
+  <g class="card c5">
+    <rect x="812" y="16" width="186" height="168" rx="14" class="box"/><rect x="832" y="16" width="44" height="4" rx="2" class="bar"/>
+    <text x="832" y="86" class="sans num">-50%</text>
+    <text x="832" y="118" class="sans what">Reporting time</text>
+    <text x="832" y="160" class="mono where">COGNIZANT · POSTGRES</text>
+  </g>
+  <g class="card c6">
+    <rect x="1014" y="16" width="182" height="168" rx="14" class="box"/><rect x="1034" y="16" width="44" height="4" rx="2" class="bar"/>
+    <text x="1034" y="86" class="sans num">6+</text>
+    <text x="1034" y="118" class="sans what">Enterprise clients</text>
+    <text x="1034" y="160" class="mono where">SCRIBE · TS VIZ LIBRARY</text>
+  </g>
+</svg>

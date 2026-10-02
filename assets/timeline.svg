@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-label="Career timeline: Princeton B.S. Computer Science 2011–2015; Cognizant Senior Software Engineer 2015–2019; Scribe Senior Full Stack Engineer 2019–2022; Uber Senior Software Engineer 2022–present">
+  <defs>
+    <linearGradient id="track" gradientUnits="userSpaceOnUse" x1="60" y1="0" x2="1140" y2="0">
+      <stop offset="0" stop-color="#30363d"/>
+      <stop offset="1" stop-color="#00e5a0"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+      .line { stroke-dasharray: 1100; stroke-dashoffset: 1100; animation: draw 1.8s ease-out forwards; }
+      @keyframes draw { to { stroke-dashoffset: 0 } }
+      .stop { opacity: 0; animation: show .6s ease-out forwards; }
+      .s1 { animation-delay: .2s } .s2 { animation-delay: .6s } .s3 { animation-delay: 1s } .s4 { animation-delay: 1.4s }
+      @keyframes show { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: translateY(0) } }
+      .yr { fill: #6e8a85; font-size: 12px; letter-spacing: 1px; }
+      .co { fill: #e6edf3; font-size: 20px; font-weight: 700; }
+      .role { fill: #00e5a0; font-size: 13px; font-weight: 600; }
+      .det { fill: #8b949e; font-size: 12.5px; }
+      .now { fill: none; stroke: #00e5a0; transform-box: fill-box; transform-origin: center; animation: ping 2.2s ease-out infinite; }
+      @keyframes ping { from { opacity: .8; transform: scale(1) } to { opacity: 0; transform: scale(2.8) } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="250" rx="18" fill="#0d1117" stroke="#21302f"/>
+  <line x1="60" y1="70" x2="1140" y2="70" stroke="#1f2a2e" stroke-width="4" stroke-linecap="round"/>
+  <line x1="60" y1="70" x2="1140" y2="70" stroke="url(#track)" stroke-width="4" stroke-linecap="round" class="line"/>
+
+  <g class="stop s1">
+    <circle cx="120" cy="70" r="9" fill="#0d1117" stroke="#8b949e" stroke-width="3"/>
+    <text x="120" y="40" text-anchor="middle" class="mono yr">2011 — 2015</text>
+    <text x="120" y="112" text-anchor="middle" class="sans co">Princeton</text>
+    <text x="120" y="136" text-anchor="middle" class="sans role">B.S. Computer Science</text>
+    <text x="120" y="160" text-anchor="middle" class="sans det">New Jersey</text>
+  </g>
+  <g class="stop s2">
+    <circle cx="420" cy="70" r="9" fill="#0d1117" stroke="#5fbf9f" stroke-width="3"/>
+    <text x="420" y="40" text-anchor="middle" class="mono yr">2015 — 2019</text>
+    <text x="420" y="112" text-anchor="middle" class="sans co">Cognizant</text>
+    <text x="420" y="136" text-anchor="middle" class="sans role">Senior Software Engineer</text>
+    <text x="420" y="160" text-anchor="middle" class="sans det">Multimedia analytics ETL</text>
+    <text x="420" y="180" text-anchor="middle" class="sans det">React · React Native · Nest.js</text>
+  </g>
+  <g class="stop s3">
+    <circle cx="720" cy="70" r="9" fill="#0d1117" stroke="#2fd3a0" stroke-width="3"/>
+    <text x="720" y="40" text-anchor="middle" class="mono yr">2019 — 2022</text>
+    <text x="720" y="112" text-anchor="middle" class="sans co">Scribe</text>
+    <text x="720" y="136" text-anchor="middle" class="sans role">Senior Full Stack Engineer</text>
+    <text x="720" y="160" text-anchor="middle" class="sans det">Predictive maintenance · IoT viz</text>
+    <text x="720" y="180" text-anchor="middle" class="sans det">React · D3.js · Python · AWS</text>
+  </g>
+  <g class="stop s4">
+    <circle cx="1020" cy="70" r="9" class="now"/>
+    <circle cx="1020" cy="70" r="10" fill="#00e5a0"/>
+    <text x="1020" y="40" text-anchor="middle" class="mono yr" fill="#00e5a0">2022 — NOW</text>
+    <text x="1020" y="112" text-anchor="middle" class="sans co">Uber</text>
+    <text x="1020" y="136" text-anchor="middle" class="sans role">Senior Software Engineer</text>
+    <text x="1020" y="160" text-anchor="middle" class="sans det">Real-time fraud &amp; risk scoring</text>
+    <text x="1020" y="180" text-anchor="middle" class="sans det">Django · Nest.js · LLMs · RAG · K8s</text>
+  </g>
+</svg>
